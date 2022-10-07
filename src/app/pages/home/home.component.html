@@ -1,0 +1,36 @@
+<app-header></app-header>
+<div class=" content">
+  <h1>Lista produtos</h1>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Marca</th>
+        <th scope="col">Modelo</th>
+        <th *ngIf="acessoTotal" scope="col">Preço de custo</th>
+        <th scope="col">Preço de venda</th>
+        <th *ngIf="acessoTotal" scope="col">Estoque mínimo</th>
+        <th *ngIf="acessoTotal" scope="col">Estoque máximo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let prod of produtos">
+        <th scope="row">{{prod.id}}</th>
+        <td>{{prod.nome}}</td>
+        <td>{{prod.marca}}</td>
+        <td>{{prod.modelo}}</td>
+        <td *ngIf="acessoTotal">{{prod.precoCusto}}</td>
+        <td>{{prod.precoVenda}}</td>
+        <td *ngIf="acessoTotal">{{prod.estoqueMinimo}}</td>
+        <td *ngIf="acessoTotal">{{prod.estoqueMaximo}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+<app-footer></app-footer>
+
+
+

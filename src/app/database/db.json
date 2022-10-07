@@ -1,0 +1,122 @@
+{
+  "usuarios": [
+    {
+      "nome": "Vinicius Andretta",
+      "telefone": "30000",
+      "email": "vinicius@foursys.com",
+      "senha": "123",
+      "acesso": "Total",
+      "cep": "81670250",
+      "endereco": "Rua Doutor Danilo Gomes",
+      "bairro": "Boqueirão",
+      "cidade": "Curitiba",
+      "estado": "PR",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "nome": "Guilherme",
+      "telefone": "4004",
+      "email": "gui@lol",
+      "senha": "123",
+      "acesso": "Restrito",
+      "cep": "81670250",
+      "endereco": "Rua Doutor Danilo Gomes",
+      "bairro": "Boqueirão",
+      "cidade": "Curitiba",
+      "estado": "PR"
+    }
+  ],
+  "produtos": [
+    {
+      "nome": "",
+      "marca": "",
+      "modelo": "",
+      "precoCusto": 0,
+      "precoVenda": 0,
+      "estoqueMinimo": 0,
+      "estoqueMaximo": 0,
+      "id": 1
+    },
+    {
+      "nome": "",
+      "marca": "",
+      "modelo": "",
+      "precoCusto": 0,
+      "precoVenda": 0,
+      "estoqueMinimo": 0,
+      "estoqueMaximo": 0,
+      "id": 2
+    },
+    {
+      "nome": "",
+      "marca": "",
+      "modelo": "",
+      "precoCusto": 0,
+      "precoVenda": 0,
+      "estoqueMinimo": 0,
+      "estoqueMaximo": 0,
+      "id": 3
+    },
+    {
+      "nome": "",
+      "marca": "",
+      "modelo": "",
+      "precoCusto": 0,
+      "precoVenda": 0,
+      "estoqueMinimo": 0,
+      "estoqueMaximo": 0,
+      "id": 4
+    },
+    {
+      "nome": "",
+      "marca": "",
+      "modelo": "",
+      "precoCusto": 0,
+      "precoVenda": 0,
+      "estoqueMinimo": 0,
+      "estoqueMaximo": 0,
+      "id": 5
+    },
+    {
+      "nome": "Coca-cola",
+      "marca": "coca-cola",
+      "modelo": "lata",
+      "precoCusto": "1",
+      "precoVenda": "5",
+      "estoqueMinimo": "30",
+      "estoqueMaximo": "200",
+      "id": 6
+    },
+    {
+      "nome": "Fanta",
+      "marca": "coca-cola",
+      "modelo": "lata",
+      "precoCusto": "5",
+      "precoVenda": "15",
+      "estoqueMinimo": "20",
+      "estoqueMaximo": "25",
+      "id": 7
+    },
+    {
+      "nome": "Guaraná",
+      "marca": "pepsico",
+      "modelo": "lata",
+      "precoCusto": "3",
+      "precoVenda": "9",
+      "estoqueMinimo": "56",
+      "estoqueMaximo": "70",
+      "id": 8
+    },
+    {
+      "nome": "lala",
+      "marca": "uuu",
+      "modelo": "iii",
+      "precoCusto": 0,
+      "precoVenda": 0,
+      "estoqueMinimo": 0,
+      "estoqueMaximo": 0,
+      "id": 9
+    }
+  ]
+}

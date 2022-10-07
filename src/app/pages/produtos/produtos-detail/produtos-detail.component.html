@@ -1,0 +1,99 @@
+<app-header></app-header>
+<div class="content">
+  <h1>Cadastrar novo produto</h1>
+  <form class="row g-3" (ngSubmit)="goEditar()">
+    <div class="col-md-4">
+      <label for="nome" class="form-label">Nome</label>
+      <input
+        type="text"
+        class="form-control"
+        id="nome"
+        [(ngModel)]="formProduto.nome"
+        name="nome"
+        required
+        #nome="ngModel"
+      />
+        <span class="text-danger" *ngIf="nome.invalid && (nome.dirty || nome.touched) && nome.errors?.['required']">
+          Campo obrigatório
+        </span>
+    </div>
+    <div class="col-md-4">
+      <label for="marca" class="form-label">Marca</label>
+      <input
+        type="text"
+        class="form-control"
+        id="marca"
+        [(ngModel)]="formProduto.marca"
+        name="marca"
+        required
+        #marca="ngModel"
+      />
+      <span class="text-danger" *ngIf="marca.invalid && (marca.dirty || marca.touched) && marca.errors?.['required']">
+        Campo obrigatório
+      </span>
+    </div>
+    <div class="col-md-4">
+      <label for="modelo" class="form-label">Modelo</label>
+      <input
+        type="text"
+        class="form-control"
+        id="modelo"
+        [(ngModel)]="formProduto.modelo"
+        name="modelo"
+        required
+        #modelo="ngModel"
+      />
+      <span class="text-danger" *ngIf="modelo.invalid && (modelo.dirty || modelo.touched) && modelo.errors?.['required']">
+        Campo obrigatório
+      </span>
+    </div>
+    <div class="col-md-3">
+      <label for="precoCusto" class="form-label">Preço de custo</label>
+      <input
+        type="text"
+        class="form-control"
+        id="precoCusto"
+        [(ngModel)]="formProduto.precoCusto"
+        name="precoCusto"
+      />
+    </div>
+    <div class="col-md-3">
+      <label for="precoVenda" class="form-label">Preço de venda</label>
+      <input
+        type="text"
+        class="form-control"
+        id="precoVenda"
+        [(ngModel)]="formProduto.precoVenda"
+        name="precoVenda"
+      />
+    </div>
+    <div class="col-md-3">
+      <label for="estoqueMinimo" class="form-label">Estoque mínimo</label>
+      <input
+        type="text"
+        class="form-control"
+        id="estoqueMinimo"
+        [(ngModel)]="formProduto.estoqueMinimo"
+        name="estoqueMinimo"
+      />
+    </div>
+    <div class="col-md-3">
+      <label for="estoqueMaximo" class="form-label">Estoque máximo</label>
+      <input
+        type="text"
+        class="form-control"
+        id="estoqueMaximo"
+        [(ngModel)]="formProduto.estoqueMaximo"
+        name="estoqueMaximo"
+      />
+    </div>
+    <div class="col-12">
+      <button routerLink="/produtos" class="btn btn-secondary me-1">
+        Voltar
+      </button>
+      <button type="submit" class="btn btn-primary">Salvar</button>
+    </div>
+  </form>
+</div>
+
+<app-footer></app-footer>
